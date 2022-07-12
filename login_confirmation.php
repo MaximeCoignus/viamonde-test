@@ -24,7 +24,7 @@ if ($stmt = $bdd->prepare('SELECT id, password FROM users WHERE login = ?')) {
             $_SESSION['name'] = $_POST['login'];
             $_SESSION['id'] = $id;
         	$_SESSION['CREATED'] = time();
-        	header('Location: home.php');
+        	header('Location: blog.php');
         } else {
     	    // Incorrect password
 			echo 'Incorrect password!';
