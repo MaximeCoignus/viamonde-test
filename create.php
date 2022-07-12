@@ -6,16 +6,21 @@
         <title>Viamonde 2022</title>
     </head>
     <body>
-    	<div class="login-page">
-  			<div class="form">
-            	<h1>Créer</h1>
-        		<form class="login-form" method="post" action="post_create.php">
-      				<input type="text" name="title" placeholder="Titre"/><br/>
-      				<textarea id="content" name="content" rows="4" cols="50"></textarea><br/>
-      				<input class="button" type="submit" value="Créer" />
-    			</form>
-                <a href="blog.php">Retour</a>
-  			</div>
+		<div class="form">
+			<form method="post" action="post_create.php">
+				<div class="container">
+					<h1>Créer un nouvel article</h1>
+					<hr>
+
+					<label for="title"><b>Titre</b></label>
+					<input type="text" placeholder="Il était une fois..." name="title" id="title">
+
+					<label for="content"><b>Texte</b></label>
+					<textarea id="content" name="content" rows="4" cols="50">Votre texte ici...</textarea><br/>
+
+					<button type="submit" class="registerbtn">Publier</button>
+				</div>
+			</form>
     	</div>
     </body>
 </html>

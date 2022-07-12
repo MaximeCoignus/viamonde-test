@@ -6,15 +6,22 @@
         <title>Viamonde 2022</title>
     </head>
     <body>
-    	<div class="login-page">
-  			<div class="form">
-            	<h1>Se connecter</h1>
-        		<form class="login-form" method="post" action="login_confirmation.php">
-      				<input type="text" name="login" placeholder="Nom d'utilisateur"/>
-      				<input type="password" name="password" placeholder="Mot de passe"/>
-      				<input class="button" type="submit" value="Connexion" />
-    			</form>
-  			</div>
+    	<div class="form">
+			<form method="post" action="login_confirmation.php">
+				<div class="container">
+					<h1>Bienvenue sur le blog de Viamonde</h1>
+					<p>Veuillez renseigner vos identifiants</p>
+					<hr>
+
+					<label for="login"><b>Nom d'utilisateur</b></label>
+					<input type="text" placeholder="Nom d'utilisateur" name="login" id="login">
+
+					<label for="password"><b>Mot de passe</b></label>
+					<input type="password" placeholder="Mot de passe" name="password" id="password">
+
+					<button type="submit" class="registerbtn">Connexion</button>
+				</div>
+			</form>
     	</div>
     </body>
 </html>

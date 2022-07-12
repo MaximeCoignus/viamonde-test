@@ -22,15 +22,17 @@
         <title>Viamonde 2022</title>
     </head>
     <body>
-    	<div class="login-page">
-  			<div class="form">
-            	<h1>Supprimer l'article définitivement ?</h1>
-        		<form class="login-form" method="post" action="post_delete.php">
-                    <input type="hidden" name="id" value="<?php echo($post['id']) ?>">
-      				<input class="button" type="submit" value="Confirmer" />
-    			</form>
-                <a href="blog.php">Retour</a>
-  			</div>
+		<div class="form">
+			<form method="post" action="post_delete.php">
+				<div class="container">
+					<h1>Supprimer l'article définitivement ?</h1>
+					<hr>
+
+					<input type="hidden" name="id" value="<?php echo($post['id']) ?>">
+
+					<button type="submit" class="registerbtn">Confirmer</button>
+				</div>
+			</form>
     	</div>
     </body>
 </html>
