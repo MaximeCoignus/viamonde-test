@@ -8,11 +8,11 @@
     <body>
     	<div class="login-page">
   			<div class="form">
-            	<h1>Se connecter</h1>
-        		<form class="login-form" method="post" action="login_confirmation.php">
+            	<h1>Créer un compte</h1>
+        		<form class="login-form" method="post" action="creation_confirm.php">
       				<input type="text" name="login" placeholder="Nom d'utilisateur"/>
       				<input type="password" name="password" placeholder="Mot de passe"/>
-      				<input class="button" type="submit" value="Connexion" />
+      				<input class="button" type="submit" value="Créer" />
     			</form>
   			</div>
     	</div>
