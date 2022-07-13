@@ -1,3 +1,14 @@
+<?php
+
+	// We need to use sessions, so you should always start sessions using the below code.
+	session_start();
+	// If the user is logged in redirect to the blog page...
+	if (isset($_SESSION['loggedin']) && (time() - $_SESSION['CREATED']) <= 7200) {
+		header('Location: blog.php');
+		exit;
+	}
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>

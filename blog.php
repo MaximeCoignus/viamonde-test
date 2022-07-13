@@ -10,6 +10,7 @@
     
     include("db_link.php");
 
+    // DB request for blog posts access
     $postsStatement = $bdd->prepare('SELECT * FROM posts');
     $postsStatement->execute();
     $posts = $postsStatement->fetchAll();
@@ -31,8 +32,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
   		<title>Viamonde 2022</title>
     	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     	<link href="main.css" rel="stylesheet" type="text/css">
