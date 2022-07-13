@@ -1,3 +1,6 @@
+<?php 
+	include_once("session_verification.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>

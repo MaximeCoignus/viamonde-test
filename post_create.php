@@ -1,5 +1,7 @@
 <?php
 
+include_once("session_verification.php");
+
 if (empty($_POST['title']) || empty($_POST['content'])) {
     echo 'Veuillez enter un titre et du contenu.';
     return;
@@ -8,7 +10,7 @@ if (empty($_POST['title']) || empty($_POST['content'])) {
 $title = $_POST['title'];
 $content = $_POST['content'];
 
-include("db_link.php");
+include_once("db_link.php");
 
 $insertStatement = $bdd->prepare('INSERT INTO posts(title, content) VALUES (:title, :content)');
 $insertStatement->execute([

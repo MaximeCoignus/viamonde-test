@@ -1,5 +1,8 @@
 <?php
-	include("db_link.php");
+	
+	include_once("session_verification.php");
+
+	include_once("db_link.php");
 
 	if (empty($_GET['id'])) {
 		echo('Il faut un identifiant pour modifier l\'article');

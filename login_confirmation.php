@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-include("db_link.php");
+include_once("db_link.php");
 
 if ( empty($_POST['login']) && empty($_POST['password'])) {
 	exit('Please fill both the username and password fields!');
